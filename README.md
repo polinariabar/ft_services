@@ -16,7 +16,9 @@ This is a System Administration and Networking project.  Cluster management and 
   * [introduction](https://ipsoftware.ru/posts-cloud/k8s-2-yaml-api/)
   * [about objects](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/)
   * [what to write in YAML file](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.19/)
-    * [Deployment](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.19/#deployment-v1-apps)
+    * [Deployment YAML structure](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.19/#deployment-v1-apps)
+    * [Pod](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.19/#pod-v1-core)
+    * and so on
 
 # Useful information:
 * [Learn Kubernetes Basics](https://kubernetes.io/docs/tutorials/kubernetes-basics/)
