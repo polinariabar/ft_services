@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-FROM		alpine
+FROM		alpine:3.7
 
 RUN			apk update && \
 			apk add openssl nginx openrc supervisor openssh
@@ -20,15 +20,13 @@ RUN			mkdir -p /var/run/sshd
 
 RUN			echo 'root:root' | chpasswd
 RUN			sed -i 's/#*PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
-# ENV			NOTVISIBLE "in users profile"
-# RUN			echo "export VISIBLE=now" >> /etc/profile
+ENV			NOTVISIBLE "in users profile"
+RUN			echo "export VISIBLE=now" >> /etc/profile
 RUN			/usr/bin/ssh-keygen -A
 
 COPY		src/supervisord.conf	/etc/supervisord.conf
 COPY		src/default.conf		/etc/nginx/conf.d/default.conf
-COPY		src/snippets			/etc/nginx/snippets
-COPY		src/index.html			/var/www/test/index.html
-COPY		src/dhparam.pem			/etc/ssl/certs/dhparam.pem
+COPY		src/index.html			/var/www/index.html
 
 RUN			openssl req -new -newkey rsa:2048 -nodes -x509 -days 500 -subj \
 			/C=RU/ST=Moscow/L=Moscow/O=Companyname/OU=User/CN=localhost/emailAddress=support@site.com \
