@@ -24,9 +24,9 @@ ENV			NOTVISIBLE "in users profile"
 RUN			echo "export VISIBLE=now" >> /etc/profile
 RUN			/usr/bin/ssh-keygen -A
 
-COPY		src/supervisord.conf	/etc/supervisord.conf
-COPY		src/default.conf		/etc/nginx/conf.d/default.conf
-COPY		src/index.html			/var/www/index.html
+COPY		./supervisord.conf	/etc/supervisord.conf
+COPY		./default.conf		/etc/nginx/conf.d/default.conf
+COPY		./index.html		/var/www/index.html
 
 RUN			openssl req -new -newkey rsa:2048 -nodes -x509 -days 500 -subj \
 			/C=RU/ST=Moscow/L=Moscow/O=Companyname/OU=User/CN=localhost/emailAddress=support@site.com \

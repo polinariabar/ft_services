@@ -29,10 +29,10 @@ define( 'DB_USER', 'root' );
 define( 'DB_PASSWORD', 'root' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'mysql-service' );
+# define( 'DB_HOST', '192.168.99.100:3306' );
 
 /** Database Charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8' );
+define( 'DB_CHARSET', 'utf8mb4' );
 
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
@@ -46,17 +46,22 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '-B;Z=BECyj1:!-!W+n9%-k-<W.)>x(=Pe2!!CcHRamw5mxDGu^ya#euwzv<y*Hm>');
-define('SECURE_AUTH_KEY',  '`p}HA,N^JM}R67-2x+[_?Z4_Hj  S+]:,!,+E?|/U/3 :1K4x^2%A/&e[,+W{2q3');
-define('LOGGED_IN_KEY',    'pmmlypgZv;)h0qG{wYH`V+.PUQ1CPZ3CX AKd}sVU3al{iaNcH<-}g:FC}KK]+x{');
-define('NONCE_KEY',        'KUy^IQb_85`8x?f4bJh:qZg=(+KM.|>mJ&+rsUZw5(sVOeogx(4:pbX!YO$mn4PC');
-define('AUTH_SALT',        '3p76eKG[;`gaL!B)Q#gJ5Ho*%6jQC=!kx0@vk!-V;,U6O+yz^[Fs|g+pD!RdQpt@');
-define('SECURE_AUTH_SALT', 'h,pbH|goEcTZ]@>0AJv{^4btjq!<uDQ}i[[b6G-a1=SkwBxp[sa<RJHH~S?bC29X');
-define('LOGGED_IN_SALT',   '-9S1,%W6|[)M~%gN#7Nq4 LCl<{I-g6`S2W,eF8omC?WOpgDWB+[lPEp-YBal#7!');
-define('NONCE_SALT',       '>q{&X/APkgEEQppBp4idIF]]sb}3OAm1Q3FUHhXS3vy=M+iFr}5OX^TSlS|8qjoL');
-
+define( 'AUTH_KEY',         'RpPP5>|~^fN.*ahB,IJ,Ln }p2}|~_a[jeLbeU%]DV<K?PA(`F[n:5w|=|b<~WuK' );
+define( 'SECURE_AUTH_KEY',  'H9XmJ<Gd66<Tu<y.#svwkb(Rup,*GQv2l#bOjawMC3{LM-=7{so91AG}`DVpvQoc' );
+define( 'LOGGED_IN_KEY',    '1?H2.?G2#[K(blg .vT(@xT- 8b]NR$*L[jUUJMBCgbc-PW*r6YyOR#oH?J]a}0C' );
+define( 'NONCE_KEY',        'IRS9f![YNyf:D;ZC`ElC`AS0-jo&%+h3xy6jTr,Z8)7xbs%<rSizxAoI_DXH^9J5' );
+define( 'AUTH_SALT',        'TmO+L|1^]Z Q0n2U{?9aIa}jvXZCu#?)J+/vEs0+1mh#n]GPE;ua)Au!W56jf;FC' );
+define( 'SECURE_AUTH_SALT', 'SZu&0ouJr^?>FKh$N|x%=78thECw;SZyLe5Dx%p&yt{+8]k% a9xhmd>+]V2pGj+' );
+define( 'LOGGED_IN_SALT',   'E<llQ?WaP`~*;Vj]#5qnv_KM(XIBl=v2Y8,p[vl BZW`O(Y&#,H,V#g;%U;_7u;p' );
+define( 'NONCE_SALT',       '$7&aw>9lVD2oPWwGpwN?m:xzuj>%RJc 5dBpF3x|Gas>;FyFVcFeD(F3C2MiVGw0' );
 
 /**#@-*/
+
+
+/** MySQL hostname */
+define( 'DB_HOST', 'mysql-svc:3306' );
+define( 'WP_HOME', 'http://192.168.99.102:5050/' ); # EXTERNAL IP
+define( 'WP_SITEURL', 'http://192.168.99.102:5050/' ); # EXTERNAL IP
 
 /**
  * WordPress Database Table prefix.
@@ -78,7 +83,7 @@ $table_prefix = 'wp_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', true );
+define( 'WP_DEBUG', false );
 
 /* That's all, stop editing! Happy publishing. */
 
