@@ -23,10 +23,10 @@
 define( 'DB_NAME', 'wordpress' );
 
 /** MySQL database username */
-define( 'DB_USER', 'admin' );
+define( 'DB_USER', 'root' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'admin' );
+define( 'DB_PASSWORD', 'root' );
 
 /** MySQL hostname */
 # define( 'DB_HOST', '192.168.99.100:3306' );
@@ -59,9 +59,9 @@ define( 'NONCE_SALT',       '$7&aw>9lVD2oPWwGpwN?m:xzuj>%RJc 5dBpF3x|Gas>;FyFVcF
 
 
 /** MySQL hostname */
-define( 'DB_HOST',			'mysql-svc:3306' );
-define( 'WP_HOME',			'http://192.168.99.102:5050/' ); # EXTERNAL IP
-define( 'WP_SITEURL',		'http://192.168.99.102:5050/' ); # EXTERNAL IP
+define( 'DB_HOST', 'mysql-svc:3306' );
+define( 'WP_HOME', 'http://192.168.99.102:5050/' ); # EXTERNAL IP
+define( 'WP_SITEURL', 'http://192.168.99.102:5050/' ); # EXTERNAL IP
 
 /**
  * WordPress Database Table prefix.
