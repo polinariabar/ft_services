@@ -2,6 +2,7 @@
 This is a System Administration and Networking project.  Cluster management and deployment with Kubernetes.
 
 
+
 # Studying the project
 * Look through [this tutorial](https://kubernetes.io/ru/docs/tutorials/kubernetes-basics/)
 * Watch [this overview video (English)](https://www.youtube.com/watch?v=7bA0gTroJjw) about Kubernetes
